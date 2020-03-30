@@ -1,0 +1,30 @@
+Los puntos implementados en el nivel que se encuentra en "Levels/TerrainMap" son los siguientes:
+
+0.5 - Crear un Terrain como base jugable, texturizado y con vegetación.
+
+0.5 - Todas las entradas nuevas de input deberán estar mapeadas con Actions/Axis.
+	He creado crouch (Ctrl) y sequence (R).
+
+1 - Crear al menos 3 triggers:
+	He implementado el item recolecable (esferas detrás del jugador al inciar partida), zona de muerte que te quita vida progresivamente (en la aprte derecha de la "cueva") e inversión de controles (en la zona izquierda de la cueva).
+
+0.5 - Iluminar el escenario con al menos 3 tipos diferentes de luces. (las lueces se encuentran en la "cueva"). E implementar una simulación del ciclo de día/noche.
+
+1 - Crear un HUD:
+	El hud contiene el tiempo desde que se ha iniciado la partida, la vida del jugador y los items recolectados.
+
+1 - Añadir 2 esrados en el animation blueprint:
+	Idle agachado (tumbado, activado con el Ctrl estando estático) y muerte (activado al tener <= 0 de vida).
+
+0.5 - Crear alguna funcionalidad en entre las siguientes, en el Level Blueprint:
+	He implementado el "lanzar secuencia" pulsando al tecla "R".
+ 
+1.5 - Crear una IA a partir del third person controller.
+	No tengo muy claro qué es lo que pedíais pero yo he implementado "Huir del player cuando lo vea", "Ir hacia el player por defecto" y "Atacar el player si está a su lado" de la siguiente manera:
+		1. La IA irá a buscar al player.
+		2. Si al llegar a su destino el player está ahí (no la ha visto llegar/está "AFK") le atacará.
+		3. Si al llegar a su destino el player no está ahí:
+			4a. Si ve dónde está el player, la IA huirá y tras eso volverá al punto 1.
+			4b. Si no ve dónde está el player, se vuelve al punto 1.
+
+
