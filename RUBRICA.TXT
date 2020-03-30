@@ -27,4 +27,11 @@ Los puntos implementados en el nivel que se encuentra en "Levels/TerrainMap" son
 			4a. Si ve dónde está el player, la IA huirá y tras eso volverá al punto 1.
 			4b. Si no ve dónde está el player, se vuelve al punto 1.
 
+0.5 - Crear eventos dentro de la animación que lancen un evento dentro del player.
+	He hecho que al finalizar la animación de morir se se muestre el mensaje en pantalla "This message was launched with a nodification at the end of the animation". Ese mensaje se lanza desde el BP del player.
 
+
+
+Estos son todos los puntos que me ha dado tiempo a implementar.
+
+Guillem Poy Trujillo
